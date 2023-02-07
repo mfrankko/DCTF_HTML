@@ -30,8 +30,8 @@ submit.pack()
 
 root.mainloop()
 
-dir_path = pasta1
-dir_destino = pasta2
+dir_path = pasta1.replace('\\', '/')
+dir_destino = pasta2.replace('\\', '/')
 html_list = []
 for filename in os.listdir(dir_path):
      if filename.endswith('.html'):
